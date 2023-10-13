@@ -1,0 +1,58 @@
+Modelo de Dados Conceitual:
+
+Entidades:
+Cliente
+
+Atributos:
+idCliente (Chave Primária)
+nomeCliente
+cpfCliente
+enderecoCliente
+telefone
+Reserva
+
+Atributos:
+idReserva (Chave Primária)
+idCliente (Chave Estrangeira referenciando Cliente)
+dataReserva
+duracaoDias
+Modelo de Dados Lógico:
+
+Entidades:
+
+Cliente
+
+Atributos:
+idCliente (Chave Primária)
+nomeCliente (Texto)
+cpfCliente (Texto)
+enderecoCliente (Texto)
+telefone (Texto)
+Reserva
+
+Atributos:
+idReserva (Chave Primária)
+idCliente (Chave Estrangeira referenciando Cliente)
+dataReserva (Data)
+duracaoDias (Número Inteiro)
+Relacionamentos:
+
+Relacionamento de Um-para-Muitos de Cliente para Reserva:
+Cada Cliente pode ter várias instâncias de Reserva.
+Cada Reserva está associada a exatamente um Cliente.
+Relação Cliente - Reserva:
+
+A relação entre Cliente e Reserva é uma relação de um-para-muitos, onde um cliente pode ter várias reservas, mas cada reserva está associada a apenas um cliente. Portanto, a cardinalidade é a seguinte:
+
+Cliente (1) <-----> (0..n) Reserva
+
+Isso significa que:
+
+Um cliente pode ter zero ou mais reservas.
+Cada reserva está associada a exatamente um cliente.
+Aqui está uma descrição mais detalhada:
+
+Cliente (1) <-----> (0..n) Reserva
+Um cliente pode ter zero ou mais reservas.
+Cada reserva pertence a exatamente um cliente.
+
