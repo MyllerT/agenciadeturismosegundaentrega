@@ -1,0 +1,5 @@
+# Ignorar a pasta 'out'
+/out/
+
+# Ignorar arquivos de log
+*.log

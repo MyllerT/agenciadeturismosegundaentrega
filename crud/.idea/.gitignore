@@ -1,3 +1,17 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+# Arquivos e pastas específicas a serem ignorados
+/settings/
+/idea/
+/out/
+
+# Ignore arquivos de configuração comuns
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# Arquivos de log e backup
+*.log
+*.bak
